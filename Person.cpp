@@ -1,11 +1,15 @@
 #include "Person.h"
 
-Person::Person() : mWeight(0.0f), mFirstName(""), mAge(0) {
-
+Person::Person() {
+    mWeight = 0.0f;
+    mFirstName = "";
+    mAge = 0;
 }
 
-Person::Person(string firstName, float newWeight, int age) : mWeight(newWeight), mFirstName(firstName), mAge(age) {
-    
+Person::Person(string firstName, float newWeight, int age) {
+    mWeight = newWeight;
+    mFirstName= firstName;
+    mAge = age;   
 }
 
 Person::~Person() {
